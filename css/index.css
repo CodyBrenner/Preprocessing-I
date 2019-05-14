@@ -135,3 +135,43 @@ body {
   height: 100%;
   background-color: crimson;
 }
+.container-home {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+nav {
+  text-align: right;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+nav a {
+  text-decoration: none;
+  padding: 0px 20px 0px 20px;
+  color: #1b1b1b;
+  font-size: 25px;
+}
+header {
+  background-color: gray;
+  border-radius: 10px;
+}
+header .profile-image {
+  padding-top: 40px;
+  padding-left: 40px;
+}
+header .profile-image img {
+  width: 400px;
+}
+header .text {
+  padding-left: 40px;
+}
+header .text h1 {
+  padding-top: 20px;
+  font-size: 60px;
+}
+header .text p {
+  padding-top: 20px;
+  font-size: 30px;
+}
+header .text p:nth-last-child(2) {
+  font-size: 20px;
+}

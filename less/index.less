@@ -55,9 +55,55 @@ table {
 
 html, body {
 	height: 100%;
-	background-color: @crimsoncolor;
+	background-color: @bgcolor;
 }
 // START CODE HERE
 // VARIABLES
 
-@crimsoncolor: crimson;
+@bgcolor: crimson;
+@fontcolor: rgb(27, 27, 27);
+
+
+// START CSS
+// CSS NESTING USING LESS COMPILER
+	.container-home{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	nav{
+		text-align: right;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		a{
+			text-decoration: none;
+			padding: 0px 20px 0px 20px;
+			color: @fontcolor;
+			font-size: 25px;
+		}
+	}
+	// Header with image and text
+	header{
+		background-color: gray;
+		border-radius: 10px;
+		.profile-image{
+			padding-top: 40px;
+			padding-left: 40px;
+		}
+		.profile-image img{
+			width: 400px;
+		}
+		.text{
+			padding-left: 40px;
+			h1{
+				padding-top: 20px;
+				font-size: 60px;
+			}
+			p{
+				padding-top: 20px;
+				font-size: 30px;
+			}
+			p:nth-last-child(2){
+				font-size: 20px;
+			}
+		}
+	}
