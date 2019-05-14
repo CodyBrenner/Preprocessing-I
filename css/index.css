@@ -133,11 +133,11 @@ table {
 html,
 body {
   height: 100%;
-  background-color: crimson;
+  background-color: white;
 }
 .container-home {
-  margin-left: 10%;
-  margin-right: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 nav {
   text-align: right;
@@ -151,8 +151,9 @@ nav a {
   font-size: 25px;
 }
 header {
-  background-color: gray;
-  border-radius: 10px;
+  background: crimson;
+  border-radius: 2px;
+  padding-bottom: 100px;
 }
 header .profile-image {
   padding-top: 40px;
@@ -162,7 +163,8 @@ header .profile-image img {
   width: 400px;
 }
 header .text {
-  padding-left: 40px;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 header .text h1 {
   padding-top: 20px;
@@ -171,7 +173,30 @@ header .text h1 {
 header .text p {
   padding-top: 20px;
   font-size: 30px;
+  padding-bottom: 20px;
 }
 header .text p:nth-last-child(2) {
   font-size: 20px;
+  margin-bottom: 30px;
+}
+header .text a {
+  transition: all 0.3s ease-in-out;
+  padding: 20px 60px 20px 60px;
+  background-color: #575757;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+}
+header .text a:hover {
+  background-color: #858585;
+}
+.content {
+  display: flex;
+}
+.content .left {
+  min-width: 50%;
+}
+.content .right {
+  min-width: 50%;
 }

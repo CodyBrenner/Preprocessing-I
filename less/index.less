@@ -58,17 +58,45 @@ html, body {
 	background-color: @bgcolor;
 }
 // START CODE HERE
+// MIX INS
+.linkbutton(){
+	padding: 20px 60px 20px 60px;
+	background-color: @buttoncolor;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	border-radius: 3px;
+	&:hover{
+		background-color: @buttonhover;
+		
+	}
+}
+.alignIndent(){
+	margin-right: 40px;
+	margin-left: 40px;
+}
+.pd-btm-20(){
+	padding-bottom: 20px;
+}
+.bgchange(){
+	transition: all .3s ease-in-out;
+}
+
 // VARIABLES
 
-@bgcolor: crimson;
+@bgcolor: white;
+@headercolor: crimson;
+@buttoncolor: rgb(87, 87, 87);
+@buttonhover: rgb(133, 133, 133);
 @fontcolor: rgb(27, 27, 27);
 
 
 // START CSS
 // CSS NESTING USING LESS COMPILER
 	.container-home{
-		margin-left: 10%;
-		margin-right: 10%;
+		padding-left: 10%;
+		padding-right: 10%;
+		
 	}
 	nav{
 		text-align: right;
@@ -83,8 +111,9 @@ html, body {
 	}
 	// Header with image and text
 	header{
-		background-color: gray;
-		border-radius: 10px;
+		background: @headercolor;
+		border-radius: 2px;
+		padding-bottom: 100px;
 		.profile-image{
 			padding-top: 40px;
 			padding-left: 40px;
@@ -93,7 +122,7 @@ html, body {
 			width: 400px;
 		}
 		.text{
-			padding-left: 40px;
+			.alignIndent;
 			h1{
 				padding-top: 20px;
 				font-size: 60px;
@@ -101,9 +130,30 @@ html, body {
 			p{
 				padding-top: 20px;
 				font-size: 30px;
+				.pd-btm-20;
 			}
 			p:nth-last-child(2){
 				font-size: 20px;
+				margin-bottom: 30px;
 			}
+			a{
+				.bgchange;
+				.linkbutton;
+			}
+	}
+}
+
+	.content{
+		display: flex;
+		.left{
+			min-width: 50%;
+		}
+		.right{
+			min-width: 50%;
 		}
 	}
+
+	// THIS IS THE MIXIN TEST??
+
+
+
