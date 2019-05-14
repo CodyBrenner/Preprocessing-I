@@ -81,22 +81,63 @@ html, body {
 .bgchange(){
 	transition: all .3s ease-in-out;
 }
+.pd-header(){
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 30px;
+}
+.bar-padding(){
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 30px;
+}
+.his-bar(){
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	font-size: 18px;
+	// CANNOT GET BORDER REMOVED FROM OUTSIDE OF THE MAIN CONTENT
+	.barborder;
 
+	p:nth-child(1){
+		width: 20%;
+		font-weight: bold;
+		padding-left: 20px;
+		
+	}
+	p:nth-child(2){
+		width: 10%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		
+	}
+	p:nth-child(3){
+		width: 40%;
+	
+		text-align: center;
+	}
+	p:nth-child(4){
+		width: 25%;
+	
+	}
+}
+.barborder(){
+	border: 1px solid gray;
+}
 // VARIABLES
-
 @bgcolor: white;
 @headercolor: crimson;
 @buttoncolor: rgb(87, 87, 87);
 @buttonhover: rgb(133, 133, 133);
 @fontcolor: rgb(27, 27, 27);
 
-
 // START CSS
 // CSS NESTING USING LESS COMPILER
 	.container-home{
 		padding-left: 10%;
 		padding-right: 10%;
-		
 	}
 	nav{
 		text-align: right;
@@ -142,18 +183,70 @@ html, body {
 			}
 	}
 }
-
 	.content{
 		display: flex;
 		.left{
 			min-width: 50%;
+			h1{
+				.pd-header;
+			
+			}
+			p{
+				line-height: 30px;
+				margin-right: 40px;
+			}
 		}
 		.right{
 			min-width: 50%;
+			h2{
+				.pd-header;
+			}
+			.items{
+				font-size: 20px;
+				
+			}
+			.itemcontent{
+				padding: 10px 0px 10px 15px;
+				border: 1px solid gray;
+				font-weight: normal
+			}
+		
 		}
 	}
+	.history{
+		
+		h1{
+			.pd-header;
+			
+		}
+		.bar{
+			.his-bar;
+			font-weight: bold;
+			.bar-padding;
+			
+		}
+		
+		.his{
+			.his-bar;
+		}
+		// ADDED COLOR TO THIS BAR BY HAVING TO SEPERATE CLASSES WITHIN THE HTML
+		.his-color{
+			.his-bar;
+			background-color: rgb(214, 214, 214);
+		}
+	}
+footer{
+	margin-top: 50px;
+	min-height: 10vh;
+	background-color: gray;
+	h3{
+		font-size: 20px;
+		text-align: center;
+		padding: 50px;
+		color: white;
 
-	// THIS IS THE MIXIN TEST??
+		}
+}
 
 
 

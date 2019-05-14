@@ -197,6 +197,127 @@ header .text a:hover {
 .content .left {
   min-width: 50%;
 }
+.content .left h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+.content .left p {
+  line-height: 30px;
+  margin-right: 40px;
+}
 .content .right {
   min-width: 50%;
+}
+.content .right h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+.content .right .items {
+  font-size: 20px;
+}
+.content .right .itemcontent {
+  padding: 10px 0px 10px 15px;
+  border: 1px solid gray;
+  font-weight: normal;
+}
+.history h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+.history .bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 18px;
+  border: 1px solid gray;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+.history .bar p:nth-child(1) {
+  width: 20%;
+  font-weight: bold;
+  padding-left: 20px;
+}
+.history .bar p:nth-child(2) {
+  width: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.history .bar p:nth-child(3) {
+  width: 40%;
+  text-align: center;
+}
+.history .bar p:nth-child(4) {
+  width: 25%;
+}
+.history .his {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 18px;
+  border: 1px solid gray;
+}
+.history .his p:nth-child(1) {
+  width: 20%;
+  font-weight: bold;
+  padding-left: 20px;
+}
+.history .his p:nth-child(2) {
+  width: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.history .his p:nth-child(3) {
+  width: 40%;
+  text-align: center;
+}
+.history .his p:nth-child(4) {
+  width: 25%;
+}
+.history .his-color {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 18px;
+  border: 1px solid gray;
+  background-color: #d6d6d6;
+}
+.history .his-color p:nth-child(1) {
+  width: 20%;
+  font-weight: bold;
+  padding-left: 20px;
+}
+.history .his-color p:nth-child(2) {
+  width: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.history .his-color p:nth-child(3) {
+  width: 40%;
+  text-align: center;
+}
+.history .his-color p:nth-child(4) {
+  width: 25%;
+}
+footer {
+  margin-top: 50px;
+  min-height: 10vh;
+  background-color: gray;
+}
+footer h3 {
+  font-size: 20px;
+  text-align: center;
+  padding: 50px;
+  color: white;
 }
