@@ -56,6 +56,7 @@ table {
 html, body {
 	height: 100%;
 	background-color: @bgcolor;
+	
 }
 // START CODE HERE
 // MIX INS
@@ -122,9 +123,13 @@ html, body {
 		width: 25%;
 	
 	}
+	font-family: @cabin;
 }
 .barborder(){
 	border: 1px solid gray;
+}
+.boxshadow(){
+	box-shadow: 3px 3px 8px black;
 }
 // VARIABLES
 @bgcolor: white;
@@ -132,7 +137,11 @@ html, body {
 @buttoncolor: rgb(87, 87, 87);
 @buttonhover: rgb(133, 133, 133);
 @fontcolor: rgb(27, 27, 27);
-
+@fonthover: rgb(80, 80, 80);
+// FONTS
+@cabin:  'Cabin', sans-serif; 
+@round: 'Varela Round', sans-serif;
+@work: 'Work Sans', sans-serif;
 // START CSS
 // CSS NESTING USING LESS COMPILER
 	.container-home{
@@ -148,6 +157,10 @@ html, body {
 			padding: 0px 20px 0px 20px;
 			color: @fontcolor;
 			font-size: 25px;
+			font-family: @round;
+		}
+		a:hover{
+			color: @fonthover;
 		}
 	}
 	// Header with image and text
@@ -155,37 +168,50 @@ html, body {
 		background: @headercolor;
 		border-radius: 2px;
 		padding-bottom: 100px;
+		.boxshadow;
 		.profile-image{
 			padding-top: 40px;
 			padding-left: 40px;
+			
 		}
 		.profile-image img{
 			width: 400px;
+			.boxshadow;
 		}
 		.text{
+			
+			
 			.alignIndent;
 			h1{
+				font-family: @cabin;
 				padding-top: 20px;
 				font-size: 60px;
 			}
 			p{
+				font-family: @round;
 				padding-top: 20px;
 				font-size: 30px;
 				.pd-btm-20;
 			}
 			p:nth-last-child(2){
+				font-family: @round;
 				font-size: 20px;
 				margin-bottom: 30px;
 			}
 			a{
 				.bgchange;
 				.linkbutton;
+				font-family: @work;
+				letter-spacing: 1px;
+				
 			}
 	}
 }
 	.content{
 		display: flex;
+		margin-top: 3vh;
 		.left{
+			font-family: @cabin;
 			min-width: 50%;
 			h1{
 				.pd-header;
@@ -197,6 +223,7 @@ html, body {
 			}
 		}
 		.right{
+			font-family: @round;
 			min-width: 50%;
 			h2{
 				.pd-header;
@@ -216,35 +243,38 @@ html, body {
 	.history{
 		
 		h1{
+			font-family: @round;
 			.pd-header;
+			margin-top: 3vh;
 			
 		}
 		.bar{
 			.his-bar;
 			font-weight: bold;
 			.bar-padding;
-			
+		
 		}
 		
 		.his{
 			.his-bar;
+			
 		}
-		// ADDED COLOR TO THIS BAR BY HAVING TO SEPERATE CLASSES WITHIN THE HTML
 		.his-color{
 			.his-bar;
 			background-color: rgb(214, 214, 214);
+		
 		}
 	}
 footer{
 	margin-top: 50px;
-	min-height: 10vh;
+	.boxshadow;
 	background-color: gray;
 	h3{
 		font-size: 20px;
 		text-align: center;
 		padding: 50px;
 		color: white;
-
+		font-family: @work;
 		}
 }
 

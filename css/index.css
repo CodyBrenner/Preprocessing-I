@@ -149,11 +149,16 @@ nav a {
   padding: 0px 20px 0px 20px;
   color: #1b1b1b;
   font-size: 25px;
+  font-family: 'Varela Round', sans-serif;
+}
+nav a:hover {
+  color: #505050;
 }
 header {
   background: crimson;
   border-radius: 2px;
   padding-bottom: 100px;
+  box-shadow: 3px 3px 8px black;
 }
 header .profile-image {
   padding-top: 40px;
@@ -161,21 +166,25 @@ header .profile-image {
 }
 header .profile-image img {
   width: 400px;
+  box-shadow: 3px 3px 8px black;
 }
 header .text {
   margin-right: 40px;
   margin-left: 40px;
 }
 header .text h1 {
+  font-family: 'Cabin', sans-serif;
   padding-top: 20px;
   font-size: 60px;
 }
 header .text p {
+  font-family: 'Varela Round', sans-serif;
   padding-top: 20px;
   font-size: 30px;
   padding-bottom: 20px;
 }
 header .text p:nth-last-child(2) {
+  font-family: 'Varela Round', sans-serif;
   font-size: 20px;
   margin-bottom: 30px;
 }
@@ -187,14 +196,18 @@ header .text a {
   color: white;
   text-decoration: none;
   border-radius: 3px;
+  font-family: 'Work Sans', sans-serif;
+  letter-spacing: 1px;
 }
 header .text a:hover {
   background-color: #858585;
 }
 .content {
   display: flex;
+  margin-top: 3vh;
 }
 .content .left {
+  font-family: 'Cabin', sans-serif;
   min-width: 50%;
 }
 .content .left h1 {
@@ -207,6 +220,7 @@ header .text a:hover {
   margin-right: 40px;
 }
 .content .right {
+  font-family: 'Varela Round', sans-serif;
   min-width: 50%;
 }
 .content .right h2 {
@@ -223,9 +237,11 @@ header .text a:hover {
   font-weight: normal;
 }
 .history h1 {
+  font-family: 'Varela Round', sans-serif;
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 30px;
+  margin-top: 3vh;
 }
 .history .bar {
   display: flex;
@@ -235,6 +251,7 @@ header .text a:hover {
   align-items: center;
   font-size: 18px;
   border: 1px solid gray;
+  font-family: 'Cabin', sans-serif;
   font-weight: bold;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -265,6 +282,7 @@ header .text a:hover {
   align-items: center;
   font-size: 18px;
   border: 1px solid gray;
+  font-family: 'Cabin', sans-serif;
 }
 .history .his p:nth-child(1) {
   width: 20%;
@@ -291,6 +309,7 @@ header .text a:hover {
   align-items: center;
   font-size: 18px;
   border: 1px solid gray;
+  font-family: 'Cabin', sans-serif;
   background-color: #d6d6d6;
 }
 .history .his-color p:nth-child(1) {
@@ -312,7 +331,7 @@ header .text a:hover {
 }
 footer {
   margin-top: 50px;
-  min-height: 10vh;
+  box-shadow: 3px 3px 8px black;
   background-color: gray;
 }
 footer h3 {
@@ -320,4 +339,5 @@ footer h3 {
   text-align: center;
   padding: 50px;
   color: white;
+  font-family: 'Work Sans', sans-serif;
 }
